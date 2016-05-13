@@ -26,8 +26,8 @@ var CurrencyListService = (function () {
             }
         };
     }
-    CurrencyListService.prototype.getFullImage = function () {
-        return 'http://res.cloudinary.com/midrate/image/upload/c_scale,w_130/banknotes/MXN20f.jpg'
+    CurrencyListService.prototype.getFullImage = function (currencyCode, value) {
+        return 'http://res.cloudinary.com/midrate/image/upload/c_scale,w_130/banknotes/' + currencyCode +  value + '.jpg';
     };
 
     CurrencyListService.prototype.get = function () {
