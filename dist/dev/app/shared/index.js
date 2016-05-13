@@ -2,6 +2,7 @@
 function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
+__export(require('./currency-list/index'));
 __export(require('./name-list/index'));
 __export(require('./navbar/index'));
 __export(require('./toolbar/index'));

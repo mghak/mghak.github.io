@@ -15,22 +15,22 @@ var HomeComponent = (function () {
     function HomeComponent(currencyListService) {
         this.currencyListService = currencyListService;
     }
-    HomeComponent.prototype.addCurrency = function () {
-        this.currencyListService.add(this.newCurrency);
-        this.newCurrency = '';
-        return false;
-    };
+    // HomeComponent.prototype.addCurrency = function () {
+    //     this.currencyListService.add(this.newCurrency);
+    //     this.newCurrency = '';
+    //     return false;
+    // };
     HomeComponent = __decorate([
         core_1.Component({
             selector: 'sd-home',
             templateUrl: 'app/+home/home.component.html',
             styleUrls: ['app/+home/home.component.css'],
             directives: [common_1.FORM_DIRECTIVES]
-        }), 
+        }),
         __metadata('design:paramtypes', [(typeof (_a = typeof index_1.CurrencyListService !== 'undefined' && index_1.CurrencyListService) === 'function' && _a) || Object])
     ], HomeComponent);
     return HomeComponent;
-    var _a;
+     var _a;
 }());
 exports.HomeComponent = HomeComponent;
 

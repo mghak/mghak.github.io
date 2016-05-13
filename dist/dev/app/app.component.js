@@ -30,6 +30,10 @@ var AppComponent = (function () {
                 component: index_2.HomeComponent
             },
             {
+                path: '/home',
+                component: index_2.HomeComponent
+            },
+            {
                 path: '/example',
                 component: index_3.ExampleComponent
             },
