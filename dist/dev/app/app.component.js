@@ -26,7 +26,7 @@ var AppComponent = (function () {
         }),
         router_1.Routes([
             {
-                path: '/',
+                path: '/home',
                 component: index_2.HomeComponent
             },
             {
