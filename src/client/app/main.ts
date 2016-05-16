@@ -2,6 +2,7 @@ import { APP_BASE_HREF } from '@angular/common';
 import { enableProdMode, provide } from '@angular/core';
 import { bootstrap } from '@angular/platform-browser-dynamic';
 import { ROUTER_PROVIDERS } from '@angular/router';
+import {HTTP_PROVIDERS} from '@angular/http';
 
 import { AppComponent } from './app.component';
 
@@ -9,8 +10,11 @@ if ('<%= ENV %>' === 'prod') { enableProdMode(); }
 
 bootstrap(AppComponent, [
   ROUTER_PROVIDERS,
+  HTTP_PROVIDERS,
   provide(APP_BASE_HREF, { useValue: '<%= APP_BASE %>' })
 ]);
+//bootstrap(AppComponent, [HTTP_PROVIDERS, DataService]);
+
 
 // In order to start the Service Worker located at "./worker.js"
 // uncomment this line. More about Service Workers here

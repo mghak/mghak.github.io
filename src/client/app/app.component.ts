@@ -14,7 +14,7 @@ import { NameListService, NavbarComponent, ToolbarComponent } from './shared/ind
 })
 @Routes([
   {
-    path: '/home',
+    path: '/',
     component: HomeComponent
   },
   {

@@ -1,19 +1,22 @@
-<p>
-  Howdy! Here's a list of awesome computer scientists.
-  Do you know any others? Add to the list yourself.
-</p>
-
-<form (submit)="showMoney()">
-
-    <!--<select class="form-control" id="currencyCode" [ngModel]="currencyCode">-->
-      <!--<option *ngFor="let currencyCode of ['CDN','MNX']" [value]="currency">{{currency}}</option>-->
-    <!--</select>-->
-
-  <!--<input [(ngModel)]="amount" placeholder="Amount">-->
-  <button type="submit">Show me the money !</button>
-</form>
+<h1>Show me the money</h1>
 
 
-<ul>
-  <li *ngFor="let name of nameListService.get()">{{name}}</li>
-</ul>
+<select style="height: 200px;" class="form-control" [(ngModel)]="currencyCode">
+    <option *ngFor="let currencyCode of currencyCodes" [value]="currencyCode">{{currencyCode}}</option>
+</select>
+
+<input [(ngModel)]="amount" placeholder="Amount">
+<button (click)="showMoney()">Show me the money !</button>
+
+<div *ngFor="#url of urls">
+    <img style='height:130px;' src="{{url}}"/>
+</div>
+
+<!--<ul>-->
+    <!--<li *ngFor="#note of notes">-->
+        <!--<p>note: {{note}} : {{bills[note].number}} </p>-->
+        <!--<p>url: {{bills[note].url}}</p>-->
+        <!--<a href="{{bills[note].url}}"> link </a>-->
+    <!--</li>-->
+<!--</ul>-->
+
